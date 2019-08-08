@@ -1,6 +1,6 @@
 # websocket
-Websocket Example And Kafka integration: this is a small project tha show how to implement a Web Socket comunication using springboot and a Front end
-in Angular 7. SockJS and Stomp are used. There is an html page (index.html) too in backend project too, where it is used JQuery to connect
+Websocket Example And Kafka integration: this is a small project tha show how to implement a Web Socket comunication using springboot and a frontend application
+in Angular 7. SockJS and Stomp are used. There is an html page (index.html) in backend project too, where it is used JQuery to connect
 to the backend.
 URL Used:
   - https://spring.io/guides/gs/messaging-stomp-websocket/
