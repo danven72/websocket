@@ -35,7 +35,8 @@ export class AppComponent {
       console.log('Connected: ' + frame);
       that.stompClient.subscribe('/topic/greetings', (greeting) => {
         if(greeting.body) {
-          let g: Greeting = new Greeting(JSON.parse(greeting.body).content);
+          //let g: Greeting = new Greeting(JSON.parse(greeting.body).content);
+          let g: Greeting = JSON.parse(greeting.body)
           console.log('************** '+ g.content);
           that.messagesList.push(g);
         }
