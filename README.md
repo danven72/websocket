@@ -5,6 +5,7 @@ to the backend.
 URL Used:
   - https://spring.io/guides/gs/messaging-stomp-websocket/
   - https://medium.com/oril/spring-boot-websockets-angular-5-f2f4b1c14cee
+  - https://grokonez.com/frontend/angular/angular-6/angular-6-websocket-example-with-spring-boot-websocket-server-sockjs-stomp
  
  backend: Java 8 - Springboot 2
  Front End: Angular 7
