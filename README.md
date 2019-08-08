@@ -15,9 +15,9 @@ URL Used:
  - git clone https://github.com/danven72/websocket.git
   - backend:  
              - import project on sts/eclipse as Maven project
-             - start zookeper and kafka (port 9092, but for change look at application.yml
+             - start zookeper and kafka (port 9092, but you can change it in application.yml)
              - start springboot application. Open browser at localhost:8080 to see client/jquery page
-             When start springbootapplication the topic websocket is created on kafka
+             When start springbootapplication the topic "websocket" is created on kafka
   - frontend:
              - run npm install for dependency
              - run ng serve.Open browser at localost:4200
