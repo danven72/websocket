@@ -1,0 +1,17 @@
+spring: 
+  application:
+    name: websocket-example
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+          - localhost:9092
+    
+      bindings:
+          websocket-in:
+            destination: websocket
+            contentType: application/json
+          websocket-out:
+            destination: websocket
+            contentType: application/json
