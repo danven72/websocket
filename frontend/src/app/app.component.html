@@ -14,7 +14,7 @@
             <form class="form-inline">
                 <div class="form-group">
                     <label  class="mr-sm-2" for="name"><b>What is your name?</b></label>
-                    <input type="text" id="name"  #theName class="form-control mr-sm-2" [disabled]="!isConnected()" placeholder="Your name here...">
+                    <input type="text" id="name" #theName class="form-control mr-sm-2" [disabled]="!isConnected()" placeholder="Your name here...">
                     <button id="send" class="btn btn-outline-secondary" type="submit" [disabled]="!isConnected()" (click)="sendName()">Send</button>
                 </div>
             </form>
@@ -29,7 +29,7 @@
                 </tr>
                 </thead>
                 <tbody id="greetings">
-                  <tr *ngFor="let m of messagesList"><td>{{m}}</td></tr>
+                  <tr *ngFor="let m of messagesList"><td>{{m.content}}</td></tr>
                 </tbody>
             </table>
         </div>
