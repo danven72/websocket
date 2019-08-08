@@ -1,7 +1,5 @@
 package org.springframework.websocket.listeners;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -22,6 +20,6 @@ public class WebsocketListener {
 		
 		System.out.println("---> Message recieved from KAFKA: "+helloMessage.getName());
 		wsPublisher.publishToWebSocket(helloMessage);
-		System.out.println("---> Message publisjed to Websocket");
+		System.out.println("---> Message published to Websocket");
 	}
 }
