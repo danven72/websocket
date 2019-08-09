@@ -30,7 +30,7 @@ export class AppComponent {
     this.stompClient = Stomp.over(ws);
     
     let that = this;
-    this.stompClient.connect({}, (frame) => {
+    this.stompClient.connect({}, (frame: any) => {
       that.setConnected(true);
       console.log('Connected: ' + frame);
       that.stompClient.subscribe('/topic/greetings', (greeting) => {
@@ -39,12 +39,13 @@ export class AppComponent {
           let g: Greeting = JSON.parse(greeting.body)
           console.log('************** '+ g.content);
           that.messagesList.push(g);
+          this.myInput.nativeElement.value = '';
         }
       });
     });
   }
 
-  setConnected(connected) {
+  setConnected(connected: boolean) {
     console.log('SET connected: '+connected);
     this.connected = connected;
   }
