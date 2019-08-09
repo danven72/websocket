@@ -3,3 +3,9 @@
     height: 6%;
     object-fit: cover;
 }
+
+.font-header {
+    color: #e6e6e6;
+    font-weight: bold;
+    font-stretch: expanded;
+}
